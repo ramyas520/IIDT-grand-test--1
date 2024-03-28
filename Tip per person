@@ -1,0 +1,12 @@
+function calculateTip(billAmount, serviceQuality, numberOfPeople) {
+    var tipPerPerson = (billAmount * (serviceQuality / 100)) / numberOfPeople;
+    return tipPerPerson;
+}
+
+// Test Case 1
+var tip1 = calculateTip(500, 5, 2);
+console.log("Test Case 1 - Tip per person: " + tip1);
+
+// Test Case 2
+var tip2 = calculateTip(1000, 3, 5);
+console.log("Test Case 2 - Tip per person: " + tip2);
